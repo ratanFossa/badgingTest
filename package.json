@@ -75,6 +75,8 @@
   },
   "license": "MIT",
   "license": "GPL-2",
+  "license": "LGPL",
+  "license": "GPL-1",
   "bugs": {
     "url": "https://github.com/mrvautin/expressCart/issues"
   }
