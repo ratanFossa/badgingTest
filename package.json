@@ -1,0 +1,82 @@
+{
+  "name": "express-cart",
+  "version": "1.1.18",
+  "description": "A fully functioning Node.js shopping cart with Stripe, PayPal and Authorize.net payments.",
+  "private": false,
+  "scripts": {
+    "start": "node app.js",
+    "deploy": "gulp deploy",
+    "testdata": "node lib/testdata.js",
+    "test": "ava",
+    "dev": "gulp watch",
+    "lint": "eslint ./"
+  },
+  "ava": {
+    "serial": true,
+    "files": [
+      "./test/specs/*.js"
+    ],
+    "timeout": "10s",
+    "verbose": true,
+    "environmentVariables": {
+      "NODE_ENV": "test"
+    }
+  },
+  "engines": {
+    "node": "10.16.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-rate-limit": "^5.0.0",
+    "express-session": "^1.17.0",
+  },
+  "devDependencies": {
+    "ava": "^2.4.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-extra-rules": "0.0.0-development",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-nodemon": "^2.5.0",
+    "gulp-rename": "^1.4.0",
+    "less": "^3.10.3",
+    "supertest": "^4.0.2"
+  },
+  "main": "app.js",
+  "keywords": [
+    "Shopping cart",
+    "express",
+    "mongodb",
+    "nodejs",
+    "ecommerce",
+    "paypal",
+    "stripe",
+    "authorize.net",
+    "blockonomics",
+    "adyen",
+    "instore",
+    "lunr",
+    "cart",
+    "shopping",
+    "payway",
+    "westpac"
+  ],
+  "author": "Mark Moffat",
+  "homepage": "https://expresscart.markmoffat.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrvautin/expressCart.git"
+  },
+  "license": "MIT",
+  "license": "GPL-2",
+  "bugs": {
+    "url": "https://github.com/mrvautin/expressCart/issues"
+  }
+}
+
